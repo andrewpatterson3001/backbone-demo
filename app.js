@@ -7,7 +7,7 @@ app.set('view engine', 'ejs');
 app.engine('html', require('ejs').renderFile);
 
 app.get('/',function(req,res){
-    res.sendFile(path.join(__dirname+'/views/index.html'));
+    res.sendFile(path.join(__dirname+'/index.html'));
 });
 
 app.get('/node_modules/jquery/dist/jquery.js', function(req, res){
