@@ -4,9 +4,11 @@ var AppView = Backbone.View.extend({
     'click #submit-button': 'sayHello'
   },
   initialize: function() {
+    console.log('initializing')
   },
   render: function(){
     var messageSays = $('#add-new-message').val()
+    console.log($('#add-new-message').val())
     this.$el.append($('<p>').text(messageSays));
     this.$('#add-new-message').val('');
   },
