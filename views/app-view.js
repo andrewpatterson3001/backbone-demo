@@ -4,10 +4,8 @@ var AppView = Backbone.View.extend({
     'click #submit-button': 'sayHello'
   },
   initialize: function() {
-    alert('initializing')
   },
   render: function(){
-    var testString = 'hello world'
     var messageSays = $('#add-new-message').val()
     this.$el.append($('<p>').text(messageSays));
     this.$('#add-new-message').val('');
@@ -19,3 +17,10 @@ var AppView = Backbone.View.extend({
 });
 
 var app_view = new AppView();
+
+//where do I set the new instance of the message model?
+//I think it would look something like:
+
+//this.model.set({messageContent:$('#add-new-message').val()})
+
+//but where does this go? initialize?
