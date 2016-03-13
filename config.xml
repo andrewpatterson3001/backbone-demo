@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <widget xmlns   = "http://www.w3.org/ns/widgets"
+        xmlns:gap   = "http://phonegap.com/ns/1.0"
+        id          = "com.example.backbone"
+        version     = "0.0.1" >
+
+
+    <name>Backbone Example</name>
+
+    <description>
+        An example backbone app on phonegap build.
+    </description>
+
+    <author href="https://google.com" email="me@me.com">
+        Andrew Patterson
+    </author>
+
+</widget>
